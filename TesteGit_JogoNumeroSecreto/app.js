@@ -28,7 +28,7 @@ function RandomNumber() {
     let numeroEscolhido = parseInt(Math.random()*100);
     let qtdElementos = listaNumerosSorteados.length;
     if(qtdElementos == qtdLimiteSorteados){
-        listaNumerosSorteados = []
+        listaNumerosSorteados = [];
     }
     if (listaNumerosSorteados.includes(numeroEscolhido)) {
         return RandomNumber();
