@@ -20,7 +20,7 @@ function mensagemInicial() {
 mensagemInicial();
 
 let listaNumerosSorteados = [];
-let qtdLimiteSorteados = 10;
+let qtdLimiteSorteados = 100;
 let numeroSecreto = RandomNumber();
 let tentativas = 1;
 
