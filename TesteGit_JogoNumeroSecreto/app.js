@@ -14,18 +14,18 @@ function exibirTexto (tag, texto) {
 
 function mensagemInicial() {
     exibirTexto('h1', 'Jogo do Número Secreto');
-    exibirTexto('p', 'Escolha um número entre 0 e 9');
+    exibirTexto('p', 'Escolha um número entre 0 e 99');
 }
 
 mensagemInicial();
 
 let listaNumerosSorteados = [];
-let qtdLimiteSorteados = 10;
+let qtdLimiteSorteados = 100;
 let numeroSecreto = RandomNumber();
 let tentativas = 1;
 
 function RandomNumber() {
-    let numeroEscolhido = parseInt(Math.random()*10);
+    let numeroEscolhido = parseInt(Math.random()*100);
     let qtdElementos = listaNumerosSorteados.length;
     if(qtdElementos == qtdLimiteSorteados){
         listaNumerosSorteados = []
